@@ -17,3 +17,6 @@
 8. [x] [https://beige.de/](https://beige.de/)
 9. [x] [http://donicaida.com/](http://donicaida.com/)
 10. [x] [https://canalstreet.market/](https://canalstreet.market/)
+
+
+# 정리한 list 
