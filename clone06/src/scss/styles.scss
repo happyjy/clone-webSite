@@ -31,16 +31,13 @@ a {
 */
 
 /*
-  # POINT
-  1. "글자 rotate"
+  
+  # POINT1. "글자 rotate"
     - transform 으로 
 
-  2. mouse hover 했을때 사진 "blur"처리 
+  # POINT2. mouse hover 했을때 사진 "blur"처리 
     - transition 사용
     - background-size, background-position 사용
-
-  3. grid span 적용
-    - grid-column-start: span 2;
 */
 
 body {
@@ -83,7 +80,8 @@ header {
 		font-weight: 500;
 		display: flex;
 		div {
-			transform: rotateZ(-15deg); //[!] transform 속성 더 알ㅇ라보기
+			//POINT1 글자 rotate
+			transform: rotateZ(-15deg); //[!] transform 속성 더 알아라보기
 			margin: 0px -3px;
 		}
 	}
@@ -154,18 +152,19 @@ a {
 		background-size: cover;
 		background-position: center;
 		background-image: url("https://source.unsplash.com/random/");
+		// # POINT2. mouse hover 했을때 사진 "blur"처리
 		transition: all 0.2s linear;
 		cursor: pointer;
-		overflow: hidden; //[?] 어떤 역할일지 확인하기
+		overflow: hidden;
 		&:first-child,
 		&:nth-child(5),
 		&:nth-child(7),
 		&:nth-child(10) {
-			grid-column-start: span 2; //[!] grid-column css 속성, grid-column-start 속성 더 알아보기
-			// border: 5px solid red;
+			grid-column-start: span 2;
 		}
 		&:hover {
-			filter: blur(50px); //[?] filter property 알아보기
+			// # POINT2. mouse hover 했을때 사진 "blur"처리
+			filter: blur(50px);
 		}
 	}
 }

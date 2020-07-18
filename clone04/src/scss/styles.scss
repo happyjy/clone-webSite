@@ -6,16 +6,13 @@
 	box-sizing: border-box;
 }
 
-
 /*
-  # POINT
-
-  1. selector
+  # STUDY1. selector
     * first-child
     * not
     * hover
 
-  2. grid 
+  # STUDY2. grid 
     * grid-template-columns
       - 가로, 세로 column 지정
       - repeat으로 반복 줄임
@@ -23,12 +20,15 @@
       - grid의 track size 지정
       - https://css-tricks.com/snippets/css/complete-guide-grid/
  
-  3. img 비율 지키면서 width 늘이기
+  # STUDY3. img 비율 지키면서 width 늘이기
     * background, url (css property)
     * background-size
     * background-position
     * background-repeat
     * background-size
+
+  # STUDY4. flexbox childrend hight를 parent div 100%로 맞추가
+    * https://stackoverflow.com/questions/15381172/how-can-i-make-flexbox-children-100-height-of-their-parent
 */
 
 body {
@@ -49,6 +49,7 @@ header {
 	nav {
 		width: 100%;
 		height: 100%;
+		//STUDY2
 		display: grid;
 		grid-template-columns: 2fr 1fr;
 		font-size: 32px;
@@ -60,6 +61,8 @@ header {
 			&:hover {
 				background-color: gainsboro;
 			}
+
+			//STUDY1.
 			&:first-child {
 				&:hover {
 					li {
@@ -122,6 +125,7 @@ main {
 		div.text {
 			// flex: 1;
 			//# over parent
+			//STUDY4.
 			//https://stackoverflow.com/questions/15381172/how-can-i-make-flexbox-children-100-height-of-their-parent
 			// display: flex;
 			// height: 100%;
@@ -137,6 +141,7 @@ main {
 }
 
 // 이미지 비율 지키면서 늘이기(사진 block 영역 안에서 crop 되더라도)
+// STUDY3
 .resizePhoto {
 	height: 100%;
 	width: 100%;

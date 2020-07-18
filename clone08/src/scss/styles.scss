@@ -30,8 +30,7 @@ a {
 */
 
 /*
-  # POINT
-  1. hover시 display: none, block으로 사진, 글을 보여주고 안보여주는 동작
+  # POINT1. hover시 display: none, block으로 사진, 글을 보여주고 안보여주는 동작
 */
 
 body {
@@ -160,6 +159,7 @@ body {
 				background-size: cover;
 			}
 		}
+		//POINT1
 		&:hover {
 			.post__content {
 				.visible {

@@ -7,9 +7,7 @@
 }
 
 /*
-  # POINT
-
-  1. inline Elemnts, block Elemtns
+  # STUDY1. inline Elemnts, block Elemtns
     - span은 inline Elements라서 justify-content: center; 속성이 먹지 않는다.
     - https://www.w3schools.com/css/css_display_visibility.asp  
 */
@@ -163,7 +161,7 @@ main {
 	grid-template-rows: 33vh;
 	gap: 60px;
 	.location__address {
-    border: dashed 4px #000;
+		border: dashed 4px #000;
 		font-size: 68px;
 		display: flex;
 		justify-items: center;
@@ -177,7 +175,9 @@ main {
 			align-items: center;
 		}
 		span {
-			display: block; //[!] span은 inline Elemetns라 justify-items 속성이 먹지 않아 추가
+			//STUDY1
+			//span은 inline Elemetns라 justify-items 속성이 먹지 않아 추가
+			display: block;
 		}
 	}
 }

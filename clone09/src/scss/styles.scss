@@ -28,13 +28,11 @@ a {
 */
 
 /*
-  # POINT
-  1. @extend 사용
-    - tinyText, grid 재사용
+  # STUDY1. @extend 사용
+  # STUDY2. grid 적용으로 테이블 형식으로 보이게.
+    - .works__header, .works__work에 % grid 재사용
+  # STUDY3. hover시 italic 글씨체 변경
 
-  2. hover시 italic 체로 변경되는 
-
-  3. grid 적용으로 테이블 형식으로 보이게.
 */
 
 body {
@@ -54,6 +52,7 @@ header {
 .works {
 	margin-bottom: 80px;
 	.works__header {
+		//STUDY1, 2
 		@extend %grid;
 		padding-bottom: 10px;
 		span {
@@ -62,11 +61,13 @@ header {
 	}
 	.works__list {
 		.works__work {
+			//STUDY1, 2
 			@extend %grid;
 			cursor: pointer;
 			border-top: 1px solid $black;
 			padding: 20px 0px;
 			font-size: 20px;
+			//STUDY3
 			&:hover {
 				font-style: italic;
 			}
@@ -85,8 +86,7 @@ header {
 		@extend %tinyText;
 	}
 }
-
-a {
+ㅑ a {
 	color: $red;
 	&:hover {
 		font-style: italic;

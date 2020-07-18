@@ -1,6 +1,12 @@
-# clone-webSite
-webSite를 클론하면서 퍼블리싱 능력을 키워본자
 
+# 작업 환경 
+  - gulp로 작업 환경 설정 되어 있다
+  - 수정하고 싶은 폴더를 root로 두고 npm dev 하면 bundling 된다.
+
+# clone-webSite
+  - [아래 10개 사이트 클론 코딩](https://happyjy-learning-scss.netlify.app/)
+
+# clone-webSite 대상
 1. [x] [https://besthorrorscenes.com/](https://besthorrorscenes.com/)
 2. [x] [https://paint-box.com/](https://paint-box.com/)
 3. [x] [http://10x19.co/](http://10x19.co/)
